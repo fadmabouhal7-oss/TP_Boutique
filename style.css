@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -143,13 +144,12 @@ a {
     color: #580952;
 }
 .discover {
-    background-color: #dab6d8;
-    border: 1px solid #4a3b4a;
+    background-color: #8a5f8a;
     padding-bottom: 13px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 10px;
+    border-radius: 8px;
     text-decoration: none;
 }
 .discover:hover {
@@ -214,7 +214,7 @@ footer {
     font-size: 0.9rem;
     color: #7a1d66;
     border-top: 1px solid rgba(100, 72, 100, 0.25);
-    margin-top: 30px;
+    margin-top: 40px;
 }
 form {
     max-width: 500px;
@@ -256,4 +256,87 @@ form p {
     margin-top: 18px;
     margin-bottom: 8px;
     font-size: 14px;
+}
+form input[type="radio"],
+form input[type="checkbox"] {
+    accent-color: #8a5f8a;
+    cursor: pointer;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline-block;
+    font-weight: normal;
+    margin-top: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 14px;
+}
+form button[type="submit"],
+form button[type="reset"] {
+    width: 48%;
+    padding: 12px 0;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button[type="submit"] {
+    background-color: #8a5f8a;
+    color: #ffffff;
+    float: left;
+}
+form button[type="submit"]:hover {
+    background-color: #6f4a6f;
+}
+form button[type="reset"] {
+    background-color: #d8b8d8;
+    color: #3a223a;
+    float: right;
+}
+form button[type="reset"]:hover {
+    background-color: #c89ec8;
+}
+form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.info {
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+.info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.info p {
+    font-size: 15px;
+    margin: 8px 0;
+}
+.info a {
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #8a5f8a;
+    transition: color 0.2s ease; 
+}
+.info a:hover {
+    color: #8a5f8a;
+}
+.end a {
+    text-decoration: none;
+    border-bottom: 1px solid #8a5f8a;
+    transition: color 0.2s ease;
+}
+.end a:hover {
+    color: #8a5f8a;
+}
+.end {
+    line-height: 2.5;
 }
